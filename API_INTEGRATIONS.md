@@ -25,8 +25,13 @@ Add a live adapter by implementing `SegmentProvider` (and `BookingProvider` for 
 **Buses**
 - redBus offers partner/API arrangements, but official documentation was not found in search; third-party listings are unverified. **Blocker:** apply via redBus business/partnerships. Other aggregators to evaluate similarly.
 
+**Live flight fares: Duffel (adapter written, untested live)**
+- `src/lib/providers/duffel.ts` calls `POST https://api.duffel.com/air/offer_requests?return_offers=true` with `Authorization: Bearer <token>` and `Duffel-Version: v2` (per Duffel's published docs). A test token can be created in the Duffel dashboard (More > Developers > Access tokens). The docs reviewed here do not say what is required to go live (verification, balance, fees): confirm with Duffel.
+- Duffel's documented booking flow is: offer request, re-fetch the offer for the current price, then create an order with passenger details and a payment of type `balance` (or `arc_bsp_cash` for IATA agents). Booking is not implemented here.
+- Set `DUFFEL_ACCESS_TOKEN` and `DUFFEL_FX_RATES` (INR per unit of each currency) in the host dashboard.
+
 **Places / stations**
-- Demo uses a built-in gazetteer of 79 cities worldwide (names, aliases, IATA codes, coordinates, fixed UTC offsets) with generated terminals. For production, license a places/airport/station dataset (e.g. IATA/OurAirports for airports; railway station codes from an authorised source) and keep manual-entry fallback.
+- The planner uses open data: GeoNames (34k cities, 2.8k states/regions; CC BY 4.0) and OurAirports (airports, heliports, seaplane bases; public domain), plus 79 hand-curated hub cities. Every scheduled airport becomes a route node. Stations and bus stands are generated placeholders, not real station data. For production, license a places/airport/station dataset (e.g. IATA/OurAirports for airports; railway station codes from an authorised source) and keep manual-entry fallback.
 
 **Local transfers**
 - Static estimates only; labelled as estimates. A taxi/ride API would require its own agreement.

@@ -17,6 +17,7 @@
 | Manual booking checklist (references, amounts you type) | Track your own bookings | Browser localStorage on your device only | – | Until you reset or clear site data |
 | Payment records (gateway, amount, status, gateway order/transaction ids) | Take and reconcile payment | `payments` table (no card or UPI details ever reach us) | PhonePe / PayPal | Retained as tax/accounting rules require [OWNER: period] |
 | Passenger names/ages during checkout | Buy tickets after payment | Held temporarily (encrypted column), deleted right after the purchase call or on failure, 2-hour expiry | Booking provider at purchase | Minutes to 2 hours |
+| Place search text (autocomplete, up to 80 chars) | Suggest cities, states and airports | Sent to `/api/places`, answered from bundled open data; not stored or forwarded | – | Not retained |
 | Turnstile token | Bot check | Not stored | Cloudflare | – |
 
 Logs redact keys matching password/token/secret/authorization/cookie/api key/card/name/email/phone/dob/passport/aadhaar/pan. Audit notes are ≤ 200 chars and must not contain PII.

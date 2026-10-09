@@ -22,6 +22,7 @@ Security contact: **[OWNER: security@your-domain]** (replace before launch). Rep
 | Secret leakage | Service-role key server-only; `.env*` git-ignored; logs redact sensitive keys; errors generic with request id | `sanitize.ts`, `http.ts` |
 | Android | HTTPS only, backup off, system CAs only, system-browser OAuth, allowlisted deep link host/scheme | manifest, `AuthForm` |
 | Payment tampering / fake "paid" | Server-owned amount (no amount in the API), status always fetched server-to-server, amount+currency equality, authenticated webhooks that only name a payment, CAS settlement | `payments/service.ts` |
+| Place-search abuse | `/api/places` is rate-limited (90/min/IP), query length capped at 80, results are labels only (no coordinates) | `api/places/route.ts` |
 
 ## Residual risks / known limitations (be honest)
 
