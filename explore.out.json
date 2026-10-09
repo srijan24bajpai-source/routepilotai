@@ -1,0 +1,129 @@
+[
+ {
+  "search_goa": [
+   "Goa (state/region), India",
+   "Genoa, Liguria, Italy",
+   "Mormugao, Goa, India",
+   "Goa, Bicol Region, Philippines",
+   "Genoa Cristoforo Colombo Airport (GOA), Italy",
+   "Costa Mesa, California, United States"
+  ],
+  "search_lko": [
+   "Lucknow, Uttar Pradesh, India",
+   "Chaudhary Charan Singh International Airport (LKO), India"
+  ],
+  "search_bangalore": [
+   "Bengaluru, Karnataka, India"
+  ],
+  "kanpur": {
+   "node": "Kanpur (KNU)",
+   "km": 0
+  }
+ },
+ {
+  "o": "Kanpur",
+  "d": "Pune",
+  "n": 20,
+  "ms": 2353,
+  "fastest": "KNU>PNQ(f)",
+  "fh": 3,
+  "cheapest": "KNU-STN>PNQ-STN(t)",
+  "notes": []
+ },
+ {
+  "o": "Rajasthan",
+  "d": "Kerala",
+  "n": 21,
+  "ms": 3064,
+  "fastest": "JAI>COK(f)",
+  "fh": 4,
+  "cheapest": "JAI-STN>COK-STN(t)",
+  "notes": []
+ },
+ {
+  "o": "Reykjavik",
+  "d": "Sydney",
+  "n": 23,
+  "ms": 2153,
+  "fastest": "PL-gn:3413829>KEF(g) KEF>LHR(f) LHR>SYD(f)",
+  "fh": 32,
+  "cheapest": "PL-gn:3413829>KEF-STN(g) KEF-STN>ABZ-STN(t) ABZ-STN>FRA-STN(t) FRA-STN>FRA(g) FRA>SYD(f)",
+  "notes": [
+   "Route network nodes used: Reykjavík (KEF) (for Reykjavík, Capital Region, Iceland) and Sydney (for Sydney). Road transfers are estimates."
+  ]
+ },
+ {
+  "o": "Oaxaca, Mexico",
+  "d": "Kyoto",
+  "n": 36,
+  "ms": 1849,
+  "fastest": "OAX>SFO(f) SFO>HND(f) HND>KIX(f) KIX>PL-st:JP.22(g)",
+  "fh": 31,
+  "cheapest": "OAX-BUS>MEX-BUS(b) MEX-BUS>MEX(g) MEX>HND(f) HND>HND-STN(g) HND-STN>KIX-STN(t) KIX-STN>PL-st:JP.22(g)",
+  "notes": [
+   "Route network nodes used: Oaxaca (OAX) (for Oaxaca (state/region), Mexico) and Osaka (for Kyoto (state/region), Japan). Road transfers are estimates."
+  ]
+ },
+ {
+  "o": "Timbuktu",
+  "d": "Lima",
+  "n": 32,
+  "ms": 1689,
+  "fastest": "TOM>BKO(f) BKO>GRU(f) GRU>LIM(f)",
+  "fh": 25,
+  "cheapest": "TOM>BKO(f) BKO>GRU(f) GRU>CUZ(f) CUZ>CUZ-BUS(g) CUZ-BUS>LIM-BUS(b)",
+  "notes": []
+ },
+ {
+  "o": "Nagercoil",
+  "d": "Kanyakumari",
+  "n": 19,
+  "ms": 926,
+  "fastest": "NCJ>CAPE(t)",
+  "fh": 1,
+  "cheapest": "NCJ>CAPE(t)",
+  "notes": []
+ },
+ {
+  "o": "Kanyakumari",
+  "d": "Leh",
+  "n": 32,
+  "ms": 2215,
+  "fastest": "CAPE>COK-STN(t) COK-STN>COK(g) COK>DHM(f) DHM>IXL(f)",
+  "fh": 17,
+  "cheapest": "CAPE>MDU(t) MDU>IXL-STN(t)",
+  "notes": []
+ },
+ {
+  "o": "Ulaanbaatar",
+  "d": "Cape Town",
+  "n": 29,
+  "ms": 2041,
+  "fastest": "PL-st:MN.20>UBN(g) UBN>PEK(f) PEK>JNB(f) JNB>CPT(f)",
+  "fh": 30,
+  "cheapest": "PL-st:MN.20>UBN(g) UBN>BOM(f) BOM>JNB(f) JNB>CPT(f)",
+  "notes": [
+   "Route network nodes used: Ulaanbaatar (Sergelen) (UBN) (for Ulaanbaatar (state/region), Mongolia) and Cape Town (CPT) (for Cape Town, Western Cape, South Africa). Road transfers are estimates."
+  ]
+ },
+ {
+  "o": "Fairbanks, Alaska",
+  "d": "Punta Arenas",
+  "n": 30,
+  "ms": 1773,
+  "fastest": "FAI>ORD(f) ORD>EZE(f) EZE>PUQ(f)",
+  "fh": 29,
+  "cheapest": "FAI-BUS>KBC-BUS(b) KBC-BUS>KBC(g) KBC>ORD(f) ORD>EZE(f) EZE>PUQ(f)",
+  "notes": []
+ },
+ {
+  "o": "Varanasi",
+  "d": "Kathmandu",
+  "n": 24,
+  "ms": 2085,
+  "fastest": "VNS>KTM(f)",
+  "fh": 2,
+  "cheapest": "VNS>KTM(f)",
+  "notes": []
+ }
+]
